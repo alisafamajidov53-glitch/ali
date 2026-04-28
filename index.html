@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Дракончик — игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <header class="hud">
+      <h1>🐉 Дракончик</h1>
+      <div class="scores">
+        <div class="score">Очки: <span id="score">0</span></div>
+        <div class="best">Рекорд: <span id="best">0</span></div>
+      </div>
+    </header>
+
+    <div class="canvas-wrap">
+      <canvas id="game" width="480" height="640" aria-label="Игровое поле"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <h2 id="overlay-title">Готов взлететь?</h2>
+          <p id="overlay-text">
+            Нажми <b>Пробел</b> или <b>тапни</b>, чтобы дракончик махал крыльями.<br />
+            Пролетай между скалами и собирай монеты!
+          </p>
+          <button id="start-btn" class="btn">Старт</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="controls">
+      <span>Управление: <kbd>Space</kbd> / <kbd>↑</kbd> / клик / тап</span>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

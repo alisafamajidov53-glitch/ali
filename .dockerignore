@@ -1,0 +1,10 @@
+.venv
+__pycache__
+*.pyc
+.git
+.gitignore
+*.sqlite3
+data/
+.env
+.env.local
+node_modules
